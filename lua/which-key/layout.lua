@@ -124,16 +124,16 @@ function Layout:layout(win)
 
   local column_width = max_width
 
-  if max_value_width == 0 then
+  -- if max_value_width == 0 then
     if column_width > self.options.layout.width.max then
       column_width = self.options.layout.width.max
     end
     if column_width < self.options.layout.width.min then
       column_width = self.options.layout.width.min
     end
-  else
+  -- else
     max_value_width = math.min(max_value_width, math.floor((column_width - intro_width) / 2))
-  end
+  -- end
 
   max_label_width = column_width - (intro_width + max_value_width)
 

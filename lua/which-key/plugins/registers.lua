@@ -16,16 +16,16 @@ function M.setup(_wk, _config, options) end
 M.registers = '*+"-:.%/#=_abcdefghijklmnopqrstuvwxyz0123456789'
 
 local labels = {
-  ['"'] = "last deleted, changed, or yanked content",
+  ['"'] = "last delete/change/yank",
   ["0"] = "last yank",
-  ["-"] = "deleted or changed content smaller than one line",
-  ["."] = "last inserted text",
-  ["%"] = "name of the current file",
-  [":"] = "most recent executed command",
+  ["-"] = "delete/change < 1 line",
+  ["."] = "last inserted",
+  ["%"] = "current file name",
+  [":"] = "recent executed command",
   ["#"] = "alternate buffer",
   ["="] = "result of an expression",
-  ["+"] = "synchronized with the system clipboard",
-  ["*"] = "synchronized with the selection clipboard",
+  ["+"] = "system clipboard",
+  ["*"] = "selection clipboard",
   ["_"] = "black hole",
   ["/"] = "last search pattern",
 }
